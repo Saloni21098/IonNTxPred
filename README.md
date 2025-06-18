@@ -98,13 +98,11 @@ conda activate IonNTxPred
 ---
 
 ## 🔬 Classification
-**IonNTxPred** classifies peptides and proteins as **neurotoxic or non-neurotoxic** based on their primary sequence.
+**IonNTxPred** classifies peptides and proteins as **ion channel impairing or non-impairing** based on their primary sequence.
 
 🔹 **Model Options**
-- **ESM2-t30 (Peptide Model):** For sequences **7-50 amino acids** long.
-- **ET (Protein Model):** For sequences **≥ 51 amino acids**.
-- **ET (Combined Model):** For sequences of **mixed length**.
-- **Default Model:** ESM2-t30 (Peptide Model), selected for best performance and efficiency.
+- **ESM2-t12**
+- **Hybrid model (ESM2-t12+MERCI)**: Default Mode **
 
 ---
 
@@ -126,6 +124,7 @@ usage: IonNTxPred.py [-h]
                    [-o OUTPUT]
                    [-t THRESHOLD]
                    [-j {1,2,3,4}]
+                    [-c Channel]
                    [-m {1,2,3}]
                    [-d {1,2}]
                    [-wd WORKING DIRECTORY]
@@ -136,8 +135,9 @@ usage: IonNTxPred.py [-h]
 | `-i INPUT` | Input: Peptide or protein sequence (FASTA format or simple format) |
 | `-o OUTPUT` | Output file (default: `outfile.csv`) |
 | `-t THRESHOLD` | Threshold (0-1, default: `0.5`) |
-| `-j {1,2,3,4}` | Job type: 1-Prediction, 2-Protein Scanning, 3-Design, 4-Design all possible mutants |
-| `-m {1,2,3}` | Model selection: 1-ESM2-t30 (Peptides), 2-ET (Proteins), 3-ET (Combined) |
+| `-j {1,2,3,4}` | Job type: 1-Prediction, 2-Protein Scanning, 3-Design all possible mutants, 4- Motif Scanning |
+| `-c {1,2,3,4}` | Ion channel type: 1: Na+, 2: K+, 3: Ca+, 4: Other |
+| `-m {1,2,3}` | Model selection: 1: ESM2-t12, 2: Hybrid (ESM2-t12 + MERCI) |
 | `-wd WORKING` | Working directory for saving results |
 
 ---
@@ -160,10 +160,10 @@ IonNTxPred supports two formats:
 ### 🔹 **Job Types**
 | Job | Description |
 |-----|-------------|
-| 1️⃣ **Prediction** | Predicts whether input peptide/protein is neurotoxic or not. |
+| 1️⃣ **Prediction** | Predicts whether the input peptide/protein is an ion channel impairing or not. |
 | 2️⃣ **Protein Scanning** | Identifies neurotoxic regions in a protein sequence. |
-| 3️⃣ **Design** | Generates mutant peptides/proteins with a **single amino acid/dipeptide** at a specified position. |
 | 4️⃣ **Design All Possible Mutants** | Generates and predicts **all possible mutants**. |
+
 
 ### 🔹 **Additional Options**
 | Option | Description |
