@@ -19,7 +19,7 @@ It employs large language model word embeddings as features for predicting neuro
 
 ---
 ### 🖼️ IonNTxPred Workflow Representation
-![IonNTxPred Workflow](https://github.com/saloni21098/IonNTxPred/blob/main/IonNTxPred_workflow.png)
+![IonNTxPred Workflow](https://github.com/saloni21098/IonNTxPred/blob/main/IonNTxPred.png)
 
 ## 🧪 Quick Start for Reproducibility
 
