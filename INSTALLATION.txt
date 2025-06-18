@@ -1,17 +1,17 @@
-# 🛠️ Installation Guide for NTxPred2
+# 🛠️ Installation Guide for IonNTxPred
 
 ## 🔹 PIP Installation
-To install NTxPred2 via PIP, run:
+To install IonNTxPred via PIP, run:
 ```bash
-pip install ntxpred2
+pip install ionntxpred
 ```
 To check available options, type:
 ```bash
-ntxpred2 -h
+ionntxpred -h
 ```
 
 ## 🔹 Standalone Installation
-NTxPred2 is written in **Python 3** and requires the following dependencies:
+IonNTxPred is written in **Python 3** and requires the following dependencies:
 
 ### ✅ Required Libraries
 ```bash
@@ -22,7 +22,7 @@ pytorch
 Additional required packages:
 ```bash
 pip install scikit-learn==1.5.2
-pip install pandas==1.5.3
+pip install pandas==2.2.3
 pip install torch==2.6.0
 pip install transformers==4.34.0
 pip install joblib==1.4.2
@@ -38,15 +38,15 @@ conda env create -f environment.yml
 ```
 2. Activate the environment:
 ```bash
-conda activate NTxPred2
+conda activate IonNTxPred
 ```
 
 ## ⚠️ Important Note
 - Due to the large size of the model file, the model directory has been compressed and uploaded.
-- Download the **zip file** from [Download Page](https://webs.iiitd.edu.in/raghava/ntxpred2/download.html).
+- Download the **zip file** from [Download Page](https://webs.iiitd.edu.in/raghava/ionntxpred/download.html).
 - **Extract the file** before using the code or model.
 
 ---
 
-🚀 **You are now ready to use NTxPred2!**
+🚀 **You are now ready to use IonNTxPred!**
 
