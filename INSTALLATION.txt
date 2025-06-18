@@ -1,0 +1,52 @@
+# 🛠️ Installation Guide for NTxPred2
+
+## 🔹 PIP Installation
+To install NTxPred2 via PIP, run:
+```bash
+pip install ntxpred2
+```
+To check available options, type:
+```bash
+ntxpred2 -h
+```
+
+## 🔹 Standalone Installation
+NTxPred2 is written in **Python 3** and requires the following dependencies:
+
+### ✅ Required Libraries
+```bash
+python=3.10.7
+pytorch
+```
+
+Additional required packages:
+```bash
+pip install scikit-learn==1.5.2
+pip install pandas==1.5.3
+pip install torch==2.6.0
+pip install transformers==4.34.0
+pip install joblib==1.4.2
+pip install onnxruntime==1.15.1
+Bio (Biopython): 1.81
+tqdm: 4.64.1
+```
+
+## 🔹 Installation using environment.yml
+1. Create a new Conda environment:
+```bash
+conda env create -f environment.yml
+```
+2. Activate the environment:
+```bash
+conda activate NTxPred2
+```
+
+## ⚠️ Important Note
+- Due to the large size of the model file, the model directory has been compressed and uploaded.
+- Download the **zip file** from [Download Page](https://webs.iiitd.edu.in/raghava/ntxpred2/download.html).
+- **Extract the file** before using the code or model.
+
+---
+
+🚀 **You are now ready to use NTxPred2!**
+
