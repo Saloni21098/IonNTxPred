@@ -8,7 +8,7 @@ A computational framework for predicting and designing **ion channel-impairing p
 **IonNTxPred** is developed to help researchers identify proteins and peptides that modulate ion channels such as **sodium (Na⁺)**, **potassium (K⁺)**, **calcium (Ca²⁺)**, and **others**. It integrates traditional ML models, motif discovery, and state-of-the-art protein language models (PLMs) to deliver accurate predictions and insightful biological analysis.
 It employs large language model word embeddings as features for predicting neurotoxic activity. The final model offers **Prediction, Protein-Scanning, and Design** modules, implemented using machine learning and protein language models.
 
-🔗 Visit the web server for more information: [IonNTxPred Web Server](http://webs.iiitd.edu.in/raghava/IonNTxPred)
+🔗 Visit the web server for more information: [IonNTxPred Web Server](http://webs.iiitd.edu.in/raghava/ionntxpred)
 
 📖 Please cite relevant content for complete details, including the algorithm behind the approach.
 
@@ -19,7 +19,7 @@ It employs large language model word embeddings as features for predicting neuro
 
 ---
 ### 🖼️ IonNTxPred Workflow Representation
-![IonNTxPred Workflow](https://github.com/raghavagps/IonNTxPred/blob/main/IonNTxPred_workflow.png)
+![IonNTxPred Workflow](https://github.com/saloni21098/IonNTxPred/blob/main/IonNTxPred_workflow.png)
 
 ## 🧪 Quick Start for Reproducibility
 
