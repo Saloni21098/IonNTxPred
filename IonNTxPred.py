@@ -1979,7 +1979,7 @@ if Job == 4:
 print('\n\n🎉 ======= Thank You for Using IonNTxPred! ======= 🎉')
 print('🙏 We hope this tool contributed to your research on ion channel modulating proteins.')
 print('\n📖 If you found IonNTxPred useful, please cite us in your work:')
-print('    ➤ Rathore et al., *IonNTxPred: LLM-based Prediction and Designing of Ion Channel Impairing Proteins*, 2024.')
+print('    ➤ Rathore et al., *IonNTxPred: LLM-based Prediction and Designing of Ion Channel Impairing Proteins*, 2025.')
 print('\n🔗 Useful Links:')
 print('    🌐 Web Server : https://webs.iiitd.edu.in/raghava/ionntxpred/')
 print('    💻 GitHub     : https://github.com/raghavagps/IonNTxPred')
