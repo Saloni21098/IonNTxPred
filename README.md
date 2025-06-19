@@ -19,7 +19,7 @@ It employs large language model for predicting toxic activity against ion channe
 
 ---
 ### 🖼️ IonNTxPred Workflow Representation
-![IonNTxPred Workflow](https://github.com/saloni21098/IonNTxPred/blob/main/IonNTxPred.png)
+![IonNTxPred Workflow](https://github.com/saloni21098/IonNTxPred/imagesblob/main/IonNTxPred.png)
 
 ## 🧪 Quick Start for Reproducibility
 
@@ -49,7 +49,7 @@ python IonNTxPred.py -i example.fasta -o output.csv  -j 1 -m 1 -wd working_direc
 ## 🛠️ Installation Options
 
 
-###  🧰 Pip Installation  ![PyPI Logo](images/PyPI_logo.svg.png){:width="120px" style="vertical-align: middle;"}
+###  🧰 Pip Installation  ![PyPI Logo](images/PyPI_logo.svg.png)
 To install IonNTxPred via PIP, run:
 ```bash
 pip install IonNTxPred
