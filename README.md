@@ -38,7 +38,10 @@ conda activate IonNTxPred
 # Visit: https://webs.iiitd.edu.in/raghava/IonNTxPred/download.html
 # Download the model ZIP and extract it in the root directory
 
-# 4. Run prediction on sample input
+# 4. See the available optiopns
+python IonNTxPred.py -h
+
+# 5. Run prediction on sample input
 python IonNTxPred.py -i example.fasta -o output.csv  -j 1 -m 1 -wd working_direcotory_path
 
 ```
@@ -46,7 +49,7 @@ python IonNTxPred.py -i example.fasta -o output.csv  -j 1 -m 1 -wd working_direc
 ## 🛠️ Installation Options
 
 
-### 🔹 PIP Installation
+###  🧰 Pip Installation  ![PyPI Logo](images/PyPI_logo.svg.png){:width="120px" style="vertical-align: middle;"}
 To install IonNTxPred via PIP, run:
 ```bash
 pip install IonNTxPred
