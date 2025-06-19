@@ -40,10 +40,10 @@ conda activate IonNTxPred
 # Download the model ZIP and extract it in the root directory
 
 # 4. See the available optiopns
-python IonNTxPred.py -h
+python ionntxpred.py -h
 
 # 5. Run prediction on sample input
-python IonNTxPred.py -i example.fasta -o output.csv  -j 1 -m 1 -wd working_direcotory_path
+python ionntxpred.py -i example.fasta -o output.csv  -j 1 -m 1 -wd working_direcotory_path
 
 ```
 
@@ -53,11 +53,11 @@ python IonNTxPred.py -i example.fasta -o output.csv  -j 1 -m 1 -wd working_direc
 ###  🧰 Pip Installation  ![PyPI Logo](images/PyPI_logo.svg.png)
 To install IonNTxPred via PIP, run:
 ```bash
-pip install IonNTxPred
+pip install ionntxpred
 ```
 To check available options, type:
 ```bash
-IonNTxPred -h
+ionntxpred -h
 ```
 
 ### 🔹 Standalone Installation
@@ -114,16 +114,16 @@ conda activate IonNTxPred
 
 ### 🔹 Minimum Usage
 ```bash
-IonNTxPred.py -h
+ionntxpred.py -h
 ```
 To run an example:
 ```bash
-IonNTxPred.py -i example.fasta
+ionntxpred.py -i example.fasta
 ```
 
 ### 🔹 Full Usage
 ```bash
-usage: IonNTxPred.py [-h]
+usage: ionntxpred.py [-h]
                    [-i INPUT]
                    [-o OUTPUT]
                    [-t THRESHOLD]
@@ -195,11 +195,11 @@ IonNTxPred supports two formats:
 
 ## 📦 PIP Installation (Again for Reference)
 ```bash
-pip install IonNTxPred
+pip install ionntxpred
 ```
 Check options:
 ```bash
-IonNTxPred -h
+ionntxpred -h
 ```
 
 ---
