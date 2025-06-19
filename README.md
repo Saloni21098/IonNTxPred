@@ -124,7 +124,7 @@ usage: IonNTxPred.py [-h]
                    [-o OUTPUT]
                    [-t THRESHOLD]
                    [-j {1,2,3,4}]
-                    [-c Channel]
+                   [-c Channel]
                    [-m {1,2,3}]
                    [-d {1,2}]
                    [-wd WORKING DIRECTORY]
@@ -162,7 +162,9 @@ IonNTxPred supports two formats:
 |-----|-------------|
 | 1️⃣ **Prediction** | Predicts whether the input peptide/protein is an ion channel impairing or not. |
 | 2️⃣ **Protein Scanning** | Identifies neurotoxic regions in a protein sequence. |
-| 4️⃣ **Design All Possible Mutants** | Generates and predicts **all possible mutants**. |
+| 3️⃣ **Design** | Generates and predicts **all possible mutants**. |
+| 4️⃣ **Motif Scanning** | Identifies motifs using MERCI |
+
 
 
 ### 🔹 **Additional Options**
@@ -171,7 +173,7 @@ IonNTxPred supports two formats:
 | `-p POSITION` | Position to insert mutation (1-indexed) |
 | `-r RESIDUES` | Mutated residues (single/double letter amino acid codes) |
 | `-w {8-20}` | Window length (Protein Scan mode only, default: 12) |
-| `-d {1,2}` | Display: 1-Neurotoxic only, 2-All peptides (default) |
+| `-d {1,2}` | Display: 1-Ion channel impairing only, 2-All peptides (default) |
 
 ---
 
@@ -200,5 +202,5 @@ IonNTxPred -h
 
 🚀 **Start predicting neurotoxicity with IonNTxPred today!**
 
-🔗 Visit: [IonNTxPred Web Server](http://webs.iiitd.edu.in/raghava/IonNTxPred)
+🔗 Visit: [IonNTxPred Web Server](http://webs.iiitd.edu.in/raghava/ionntxpred/)
 
