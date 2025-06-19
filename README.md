@@ -96,7 +96,7 @@ conda activate IonNTxPred
 
 ## ⚠️ Important Note
 - Due to the large size of the model file, the model directory has been compressed and uploaded.
-- Download the **zip file** from [Download Page](https://webs.iiitd.edu.in/raghava/IonNTxPred/download.html).
+- Download the **zip file** from [Download Page](https://webs.iiitd.edu.in/raghava/ionntxpred/download.html).
 - **Extract the file** before using the code or model.
 
 ---
