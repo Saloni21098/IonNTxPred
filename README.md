@@ -19,7 +19,8 @@ It employs large language model for predicting toxic activity against ion channe
 
 ---
 ### 🖼️ IonNTxPred Workflow Representation
-![IonNTxPred Workflow](https://github.com/saloni21098/IonNTxPred/imagesblob/main/IonNTxPred.png)
+![IonNTxPred Workflow](https://raw.githubusercontent.com/saloni21098/IonNTxPred/main/images/IonNTxPred.png)
+
 
 ## 🧪 Quick Start for Reproducibility
 
