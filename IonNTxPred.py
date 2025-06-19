@@ -577,19 +577,19 @@ if Job == 1:
 
     channel_configs = {
         "na": {
-            "model_path": f"{nf_path}/Model/saved_model_t12_na_train_on_complete_data",
+            "model_path": f"{nf_path}/Model/saved_model_t12_na",
             "label": "Na"
         },
         "k": {
-            "model_path": f"{nf_path}/Model/saved_model_t12_k_train_on_complete_data",
+            "model_path": f"{nf_path}/Model/saved_model_t12_k",
             "label": "K"
         },
         "ca": {
-            "model_path": f"{nf_path}/Model/saved_model_t12_ca_train_on_complete_data",
+            "model_path": f"{nf_path}/Model/saved_model_t12_ca",
             "label": "Ca"
         },
         "other": {
-            "model_path": f"{nf_path}/Model/saved_model_t12_other_train_on_complete_data",
+            "model_path": f"{nf_path}/Model/saved_model_t12_other",
             "label": "Other"
         }
     }
@@ -708,7 +708,7 @@ if Job == 2:
             seqid_1=muts['Mutant_ID'].tolist()
 
             # Load the tokenizer and model
-            model_save_path = f"{nf_path}/Model/saved_model_t12_na_train_on_complete_data"
+            model_save_path = f"{nf_path}/Model/saved_model_t12_na"
             tokenizer = AutoTokenizer.from_pretrained(model_save_path)
             model = EsmForSequenceClassification.from_pretrained(model_save_path)
             model.eval()
@@ -753,7 +753,7 @@ if Job == 2:
                     f.write(s + '\n')
             print()
             # Load and run ESM model
-            model_save_path = f"{nf_path}/Model/saved_model_t12_na_train_on_complete_data"
+            model_save_path = f"{nf_path}/Model/saved_model_t12_na"
             tokenizer = AutoTokenizer.from_pretrained(model_save_path)
             model = EsmForSequenceClassification.from_pretrained(model_save_path)
             model.eval()
@@ -834,7 +834,7 @@ if Job == 2:
             seqid_1=muts['Mutant_ID'].tolist()
 
             # Load the tokenizer and model
-            model_save_path = f"{nf_path}/Model/saved_model_t12_k_train_on_complete_data"
+            model_save_path = f"{nf_path}/Model/saved_model_t12_k"
             tokenizer = AutoTokenizer.from_pretrained(model_save_path)
             model = EsmForSequenceClassification.from_pretrained(model_save_path)
             model.eval()
@@ -880,7 +880,7 @@ if Job == 2:
                     f.write(s + '\n')
             print()
             # Load and run ESM model
-            model_save_path = f"{nf_path}/Model/saved_model_t12_k_train_on_complete_data"
+            model_save_path = f"{nf_path}/Model/saved_model_t12_k"
             tokenizer = AutoTokenizer.from_pretrained(model_save_path)
             model = EsmForSequenceClassification.from_pretrained(model_save_path)
             model.eval()
@@ -960,7 +960,7 @@ if Job == 2:
             seqid_1=muts['Mutant_ID'].tolist()
 
             # Load the tokenizer and model
-            model_save_path = f"{nf_path}/Model/saved_model_t12_ca_train_on_complete_data"
+            model_save_path = f"{nf_path}/Model/saved_model_t12_ca"
             tokenizer = AutoTokenizer.from_pretrained(model_save_path)
             model = EsmForSequenceClassification.from_pretrained(model_save_path)
             model.eval()
@@ -1005,7 +1005,7 @@ if Job == 2:
                     f.write(s + '\n')
             print()
             # Load and run ESM model
-            model_save_path = f"{nf_path}/Model/saved_model_t12_ca_train_on_complete_data"
+            model_save_path = f"{nf_path}/Model/saved_model_t12_ca"
             tokenizer = AutoTokenizer.from_pretrained(model_save_path)
             model = EsmForSequenceClassification.from_pretrained(model_save_path)
             model.eval()
@@ -1088,7 +1088,7 @@ if Job == 2:
             seqid_1=muts['Mutant_ID'].tolist()
 
             # Load the tokenizer and model
-            model_save_path = f"{nf_path}/Model/saved_model_t12_other_train_on_complete_data"
+            model_save_path = f"{nf_path}/Model/saved_model_t12_other"
             tokenizer = AutoTokenizer.from_pretrained(model_save_path)
             model = EsmForSequenceClassification.from_pretrained(model_save_path)
             model.eval()
@@ -1133,7 +1133,7 @@ if Job == 2:
                     f.write(s + '\n')
             print()
             # Load and run ESM model
-            model_save_path = f"{nf_path}/Model/saved_model_t12_other_train_on_complete_data"
+            model_save_path = f"{nf_path}/Model/saved_model_t12_other"
             tokenizer = AutoTokenizer.from_pretrained(model_save_path)
             model = EsmForSequenceClassification.from_pretrained(model_save_path)
             model.eval()
@@ -1209,7 +1209,7 @@ if Job == 3:
             print('\n======= You are using the Protein Scanning module of IonNTxPred. Your results will be stored in file: 'f"{wd}/{result_filename}"' =====\n')
             print('==== Scanning through ESM2-t12 model: Processing sequences please wait ...')
             # Load the tokenizer and model
-            model_save_path = f"{nf_path}/Model/saved_model_t12_na_train_on_complete_data"
+            model_save_path = f"{nf_path}/Model/saved_model_t12_na"
             tokenizer = AutoTokenizer.from_pretrained(model_save_path)
             model = EsmForSequenceClassification.from_pretrained(model_save_path)
             model.eval()
@@ -1244,7 +1244,7 @@ if Job == 3:
             print('==== Scanning sequences and predicting Modulating Activity using Hybrid model: Processing sequences please wait ...')
 
             # Load the tokenizer and model
-            model_save_path = f"{nf_path}/Model/saved_model_t12_na_train_on_complete_data"
+            model_save_path = f"{nf_path}/Model/saved_model_t12_na"
             tokenizer = AutoTokenizer.from_pretrained(model_save_path)
             model = EsmForSequenceClassification.from_pretrained(model_save_path)
             model.eval()
@@ -1336,7 +1336,7 @@ if Job == 3:
             print('\n======= You are using the Protein Scanning module of IonNTxPred. Your results will be stored in file: 'f"{wd}/{result_filename}"' =====\n')
             print('==== Scanning through ESM2-t12 model: Processing sequences please wait ...')
             # Load the tokenizer and model
-            model_save_path = f"{nf_path}/Model/saved_model_t12_k_train_on_complete_data"
+            model_save_path = f"{nf_path}/Model/saved_model_t12_k"
             tokenizer = AutoTokenizer.from_pretrained(model_save_path)
             model = EsmForSequenceClassification.from_pretrained(model_save_path)
             model.eval()
@@ -1371,7 +1371,7 @@ if Job == 3:
             print('==== Scanning sequences and predicting Modulating Activity using Hybrid model: Processing sequences please wait ...')
 
             # Load the tokenizer and model
-            model_save_path = f"{nf_path}/Model/saved_model_t12_k_train_on_complete_data"
+            model_save_path = f"{nf_path}/Model/saved_model_t12_k"
             tokenizer = AutoTokenizer.from_pretrained(model_save_path)
             model = EsmForSequenceClassification.from_pretrained(model_save_path)
             model.eval()
@@ -1463,7 +1463,7 @@ if Job == 3:
             print('\n======= You are using the Protein Scanning module of IonNTxPred. Your results will be stored in file: 'f"{wd}/{result_filename}"' =====\n')
             print('==== Scanning through ESM2-t12 model: Processing sequences please wait ...')
             # Load the tokenizer and model
-            model_save_path = f"{nf_path}/Model/saved_model_t12_ca_train_on_complete_data"
+            model_save_path = f"{nf_path}/Model/saved_model_t12_ca"
             tokenizer = AutoTokenizer.from_pretrained(model_save_path)
             model = EsmForSequenceClassification.from_pretrained(model_save_path)
             model.eval()
@@ -1498,7 +1498,7 @@ if Job == 3:
             print('==== Scanning sequences and predicting Modulating Activity using Hybrid model: Processing sequences please wait ...')
 
             # Load the tokenizer and model
-            model_save_path = f"{wd}/Model/saved_model_t12_ca_train_on_complete_data"
+            model_save_path = f"{nf_path}/Model/saved_model_t12_ca"
             tokenizer = AutoTokenizer.from_pretrained(model_save_path)
             model = EsmForSequenceClassification.from_pretrained(model_save_path)
             model.eval()
@@ -1591,7 +1591,7 @@ if Job == 3:
             print('==== Scanning through ESM2-t12 model: Processing sequences please wait ...')
 
             # Load the tokenizer and model
-            model_save_path = f"{nf_path}/Model/saved_model_t12_other_train_on_complete_data"
+            model_save_path = f"{nf_path}/Model/saved_model_t12_other"
             tokenizer = AutoTokenizer.from_pretrained(model_save_path)
             model = EsmForSequenceClassification.from_pretrained(model_save_path)
             model.eval()
@@ -1604,7 +1604,7 @@ if Job == 3:
             df_1 = seq_pattern(seq, seqid_1, Win_len)
             seq = df_1["Seq"].tolist()
             seqid_1 = df_1["SeqID"].tolist()
-            run_esm_model(seq, seqid_1, f"{wd}/{result_filename}", Threshold)
+            run_esm_model(seq, seqid_1, result_filename, Threshold)
 
             df13 = pd.read_csv(result_filename)
             df13.rename(columns={"ML Score": "ESM Score"}, inplace=True)
@@ -1628,7 +1628,7 @@ if Job == 3:
             print('==== Scanning sequences and predicting Modulating Activity using Hybrid model: Processing sequences please wait ...')
 
             # Load the tokenizer and model
-            model_save_path = f"{nf_path}/Model/saved_model_t12_other_train_on_complete_data"
+            model_save_path = f"{nf_path}/Model/saved_model_t12_other"
             tokenizer = AutoTokenizer.from_pretrained(model_save_path)
             model = EsmForSequenceClassification.from_pretrained(model_save_path)
             model.eval()
