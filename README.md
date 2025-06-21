@@ -9,7 +9,7 @@ A computational framework for predicting and designing **ion channel-impairing p
 It employs large language model for predicting toxic activity against ion channel. The final model offers **Prediction, Protein-Scanning, and Design** modules, implemented using protein language models.
 
 🔗 Visit the web server for more information: [IonNTxPred Web Server](http://webs.iiitd.edu.in/raghava/ionntxpred)
-
+🔗 Visit the Hugging Face: [IonNTxPred]((https://huggingface.co/raghavagps-group/IonNTxPred))
 📖 Please cite relevant content for complete details, including the algorithm behind the approach.
 
 ---
