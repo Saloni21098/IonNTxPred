@@ -107,8 +107,8 @@ conda activate IonNTxPred
 **IonNTxPred** classifies peptides and proteins as **ion channel impairing or non-impairing** based on their primary sequence.
 
 🔹 **Model Options**
-- **ESM2-t12**
-- **Hybrid model (ESM2-t12+MERCI)**: Default Mode **
+- **ESM2-t33**
+- **Hybrid model (ESM2-t33+MERCI)**: Default Mode **
 
 ---
 
@@ -143,7 +143,7 @@ usage: ionntxpred.py [-h]
 | `-t THRESHOLD` | Threshold (0-1, default: `0.5`) |
 | `-j {1,2,3,4}` | Job type: 1-Prediction, 2-Protein Scanning, 3-Design all possible mutants, 4- Motif Scanning |
 | `-c {1,2,3,4}` | Ion channel type: 1: Na+, 2: K+, 3: Ca+, 4: Other |
-| `-m {1,2,3}` | Model selection: 1: ESM2-t12, 2: Hybrid (ESM2-t12 + MERCI) |
+| `-m {1,2,3}` | Model selection: 1: ESM2-t33, 2: Hybrid (ESM2-t33 + MERCI) |
 | `-wd WORKING` | Working directory for saving results |
 
 ---
