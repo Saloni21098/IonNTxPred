@@ -49,7 +49,7 @@ def main():
     SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
     MODEL_DIR = os.path.join(SCRIPT_DIR, "Model")
     ZIP_PATH = os.path.join(SCRIPT_DIR, "Model.zip")
-    #MODEL_URL = "https://webs.iiitd.edu.in/raghava/ionntxpred/download/Model.zip"
+    MODEL_URL = "https://webs.iiitd.edu.in/raghava/ionntxpred/download/Model.zip"
 
 
     # Check if the Model folder exists
@@ -2343,4 +2343,5 @@ def main():
 
 if __name__ == "__main__":
     main()        
+
 
