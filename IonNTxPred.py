@@ -552,7 +552,7 @@ def main():
     print('#                                                                                        #')
     print('#  This program is developed to identify **modulators** and **non-modulators** of        #')
     print('#  ion channels—specifically targeting sodium (Na⁺), potassium (K⁺), calcium (Ca²⁺),     #')
-    print('#  and chloride (Cl⁻) channels.                                                          #')
+    print('#  and other channels.                                                          #')
     print('#                                                                                        #')
     print("#  🧬 Developed by Prof. G. P. S. Raghava's group at IIIT-Delhi                           #")
     print('#                                                                                        #')
@@ -2343,3 +2343,4 @@ def main():
 
 if __name__ == "__main__":
     main()        
+
