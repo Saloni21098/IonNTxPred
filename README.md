@@ -141,7 +141,7 @@ ionntxpred.py -h
 ```
 To run an example:
 ```bash
-ionntxpred.py -i example.fasta
+ionntxpred.py -i example.fasta 
 ```
 
 ### 🔹 Full Usage
@@ -151,8 +151,8 @@ usage: ionntxpred.py [-h]
                    [-o OUTPUT]
                    [-t THRESHOLD]
                    [-j {1,2,3,4,5}]
-                   [-c Channel]
-                   [-m {1,2,3}]
+                   [-c Channel {1,2,3,4}]
+                   [-m {1,2}]
                    [-d {1,2}]
                    [-wd WORKING DIRECTORY]
 ```
