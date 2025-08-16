@@ -1,0 +1,22 @@
+{
+  "version": "1.2",
+  "dbname": "na_all_db2",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "BLAST/na_all_db/na_all.fasta",
+  "number-of-letters": 199502,
+  "number-of-sequences": 2694,
+  "last-updated": "2025-08-15T15:20:00",
+  "number-of-volumes": 1,
+  "bytes-total": 514057,
+  "bytes-to-cache": 223861,
+  "files": [
+    "na_all_db2.pdb",
+    "na_all_db2.phr",
+    "na_all_db2.pin",
+    "na_all_db2.pot",
+    "na_all_db2.psq",
+    "na_all_db2.ptf",
+    "na_all_db2.pto"
+  ]
+}

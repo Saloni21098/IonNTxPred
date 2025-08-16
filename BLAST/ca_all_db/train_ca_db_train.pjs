@@ -1,0 +1,22 @@
+{
+  "version": "1.2",
+  "dbname": "train_ca_db_train",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/Users/anandr/Downloads/ion_channel_toxins/ion_channel/exdata_on_ids/ca_data/train_output.fasta",
+  "number-of-letters": 148166,
+  "number-of-sequences": 1937,
+  "last-updated": "2025-06-23T15:13:00",
+  "number-of-volumes": 1,
+  "bytes-total": 385046,
+  "bytes-to-cache": 165792,
+  "files": [
+    "train_ca_db_train.pdb",
+    "train_ca_db_train.phr",
+    "train_ca_db_train.pin",
+    "train_ca_db_train.pot",
+    "train_ca_db_train.psq",
+    "train_ca_db_train.ptf",
+    "train_ca_db_train.pto"
+  ]
+}
