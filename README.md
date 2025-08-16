@@ -164,7 +164,7 @@ usage: ionntxpred.py [-h]
 | `-t THRESHOLD` | Threshold (0-1, default: `0.3`) |
 | `-j {1,2,3,4, 5}` | Job type: 1-Prediction, 2-Protein Scanning, 3-Design all possible mutants, 4- Motif Scanning, 5- BLAST Search, |
 | `-c {1,2,3,4}` | Ion channel type: 1: Na+, 2: K+, 3: Ca+, 4: Other |
-| `-m {1,2,3}` | Model selection: 1: ESM2-t33, 2: Hybrid (ESM2-t33 + BLAST) |
+| `-m {1,2}` | Model selection: 1: ESM2-t33, 2: Hybrid (ESM2-t33 + BLAST) |
 | `-wd WORKING` | Working directory for saving results |
 
 ---
@@ -191,6 +191,7 @@ IonNTxPred supports two formats:
 | 2️⃣ **Protein Scanning** | Identifies toxic regions in a protein sequence. |
 | 3️⃣ **Design** | Generates and predicts **all possible mutants**. |
 | 4️⃣ **Motif Scanning** | Identifies motifs using MERCI |
+| 5️⃣ **BLAST Search** | Identifies toxins based BLAST hits |
 
 
 
