@@ -96,10 +96,30 @@ conda activate IonNTxPred
 
 ---
 
-## ⚠️ Important Note
+## ⚠️ Important Note- 1
 - Due to the large size of the model file, the model directory has been compressed and uploaded.
 - Download the **zip file** from [Download Page](https://webs.iiitd.edu.in/raghava/ionntxpred/download.html).
 - **Extract the file** before using the code or model.
+
+## ⚠️ Important Note- 2
+- Due to the large size of the model file, the model directory has been compressed and uploaded.
+- Download the **zip file** from [Download Page](https://webs.iiitd.edu.in/raghava/ionntxpred/download.html).
+- **Extract the file** before using the code or model.
+
+### 🔹 BLAST+ Dependency
+IonNTxPred requires **BLAST+ version 2.17.0+** for running the Hybrid model.  
+Please download the BLAST+ binary compatible with your operating system:
+
+- **Linux (x64):** `ncbi-blast-2.17.0+-x64-linux.tar.gz`  
+- **macOS (x64/arm64):** `ncbi-blast-2.17.0+-x64-macosx.tar.gz`  
+- **Windows (x64):** `ncbi-blast-2.17.0+-x64-win64.tar.gz`  
+
+🔗 [NCBI BLAST+ Download Page](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.17.0/)  
+
+After downloading:
+```bash
+# Example for Linux
+tar -xvzf ncbi-blast-2.17.0+-x64-linux.tar.gz
 
 ---
 
