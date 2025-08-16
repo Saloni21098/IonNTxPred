@@ -129,7 +129,7 @@ tar -xvzf ncbi-blast-2.17.0+-x64-linux.tar.gz
 
 🔹 **Model Options**
 - **ESM2-t33**
-- **Hybrid model (ESM2-t33+MERCI)**: Default Mode **
+- **Hybrid model (ESM2-t33+BLAST)**: Default Mode **
 
 ---
 
@@ -150,7 +150,7 @@ usage: ionntxpred.py [-h]
                    [-i INPUT]
                    [-o OUTPUT]
                    [-t THRESHOLD]
-                   [-j {1,2,3,4}]
+                   [-j {1,2,3,4,5}]
                    [-c Channel]
                    [-m {1,2,3}]
                    [-d {1,2}]
@@ -161,10 +161,10 @@ usage: ionntxpred.py [-h]
 |----------|-------------|
 | `-i INPUT` | Input: Peptide or protein sequence (FASTA format or simple format) |
 | `-o OUTPUT` | Output file (default: `outfile.csv`) |
-| `-t THRESHOLD` | Threshold (0-1, default: `0.5`) |
-| `-j {1,2,3,4}` | Job type: 1-Prediction, 2-Protein Scanning, 3-Design all possible mutants, 4- Motif Scanning, 5- BLAST Search, |
+| `-t THRESHOLD` | Threshold (0-1, default: `0.3`) |
+| `-j {1,2,3,4, 5}` | Job type: 1-Prediction, 2-Protein Scanning, 3-Design all possible mutants, 4- Motif Scanning, 5- BLAST Search, |
 | `-c {1,2,3,4}` | Ion channel type: 1: Na+, 2: K+, 3: Ca+, 4: Other |
-| `-m {1,2,3}` | Model selection: 1: ESM2-t33, 2: Hybrid (ESM2-t33 + MERCI) |
+| `-m {1,2,3}` | Model selection: 1: ESM2-t33, 2: Hybrid (ESM2-t33 + BLAST) |
 | `-wd WORKING` | Working directory for saving results |
 
 ---
@@ -197,8 +197,6 @@ IonNTxPred supports two formats:
 ### 🔹 **Additional Options**
 | Option | Description |
 |--------|-------------|
-| `-p POSITION` | Position to insert mutation (1-indexed) |
-| `-r RESIDUES` | Mutated residues (single/double letter amino acid codes) |
 | `-w {8-20}` | Window length (Protein Scan mode only, default: 12) |
 | `-d {1,2}` | Display: 1-Ion channel impairing only, 2-All peptides (default) |
 
