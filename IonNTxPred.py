@@ -766,6 +766,15 @@ def main():
         # Merge all channel results
         from functools import reduce
         final_df = reduce(lambda left, right: pd.merge(left, right, on=['SeqID', 'Seq']), channel_results)
+
+        # === Add Total_Modulators & Moonlighting_Peptide ===
+        prediction_cols = [col for col in final_df.columns if col.endswith("_Prediction")]
+        final_df["Total_Modulators"] = final_df[prediction_cols].apply(
+            lambda row: sum(val == "Modulator" for val in row), axis=1
+        )
+        final_df["Moonlighting_Activity"] = final_df["Total_Modulators"].apply(
+            lambda x: "Yes" if x > 1 else "No"
+        )
         final_df.to_csv(f"{wd}/{result_filename}", index=False)
 
         # print("\n[DEBUG] Columns in final_df:", final_df.columns.tolist())
@@ -776,7 +785,8 @@ def main():
                 (final_df.get('Na_hybrid_Prediction') == "Modulator") |
                 (final_df.get('K_hybrid_Prediction') == "Modulator") |
                 (final_df.get('Ca_hybrid_Prediction') == "Modulator") |
-                (final_df.get('Other_hybrid_Prediction') == "Modulator")
+                (final_df.get('Other_hybrid_Prediction') == "Modulator") |
+                (final_df.get('Moonlighting_Activity') == "Yes")
             ])
         elif dplay == 2:
             print(final_df)
@@ -2343,5 +2353,6 @@ def main():
 
 if __name__ == "__main__":
     main()        
+
 
 
